@@ -1,0 +1,20 @@
+digraph G {
+ rankdir="LR";
+ F2 [label="F"] [shape=rect] [color=darkorchid] [size=0.2, height=0.2, width=0.5];
+ S1 [label="S"] [shape=doublecircle] [color=blue] [size=0.2, height=0.2, width=0.3];
+ F1 [label="F"] [shape=rect] [color=darkorchid] [size=0.2, height=0.2, width=0.5];
+
+ ei  [label=<e<SUB>i</SUB><SUP>t</SUP>>] [color=red];
+ es1 [label=<e<SUB>s1</SUB><SUP>t</SUP>>] [color=green];
+ es2 [label=<e<SUB>s2</SUB><SUP>t</SUP>>] [color=green];
+ eii [label=<e<SUB>i</SUB><SUP>t+1</SUP>>] [color=red];
+
+ l0 [shape=plaintext, label="w1+w2+w3 = 1"];
+
+ F2 -> S1   [label="w3"];
+ es1 -> F2   [label="r1"];
+ es2 -> F1   [label="r2"];
+ F1 -> S1   [label="w1"];
+ ei -> S1   [label="w2"];
+ S1 -> eii;
+}

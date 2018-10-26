@@ -1,0 +1,35 @@
+digraph G {
+ rankdir="LR";
+ layout="neato";
+ l0 [shape=plaintext, label="s : sender\nr : receiver"];
+ ei[label=<e<SUB>i</SUB>>] [color=red]
+ F [shape=box] [color=darkorchid]
+ es1 [label=<e<SUB>s1</SUB>>] [color=green]
+ er2 [label=<e<SUB>r2</SUB>>] [color=green]
+ es3[label=<e<SUB>s3</SUB>>] [color=green]
+ er4[label=<e<SUB>r4</SUB>>] [color=green]
+
+ e5[label=<e<SUB>s5</SUB>>] [color=blue]
+ e6[label=<e<SUB>r6</SUB>>] [color=blue]
+ e7[label=<e<SUB>s7</SUB>>] [color=blue]
+ e8[label=<e<SUB>r8</SUB>>] [color=blue]
+ e9[label=<e<SUB>s9</SUB>>] [color=blue]
+ e10[label=<e<SUB>r10</SUB>>] [color=blue]
+ e11[label=<e<SUB>s11</SUB>>] [color=blue]
+ e12[label=<e<SUB>r12</SUB>>] [color=blue]
+
+ ei -> er2 [ label="r2" ];
+ es1 -> ei [ label="r1" ];
+ ei -> er4 [ label="r4" ];
+ es3 -> ei [ label="r3" ];
+
+ e5 -> es1 [ label="r5" ];
+ es1 -> e6 [ label="r6" ];
+ e7 -> er2 [ label="r7" ];
+ er2 -> e8 [ label="r8" ];
+ e9 -> es3 [ label="r9" ];
+ es3 -> e10 [ label="r10" ];
+ e11 -> er4 [ label="r11" ];
+ er4 -> e12 [ label="r12" ];
+
+}

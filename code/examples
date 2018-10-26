@@ -1,0 +1,25 @@
+DBpedia data : 
+
+http://dbpedia.org/resource/Jesus 			http://dbpedia.org/ontology/parent 				http://dbpedia.org/resource/Mary_(mother_of_Jesus)
+http://dbpedia.org/resource/Christianity 		http://www.w3.org/2000/01/rdf-schema#seeAlso 			http://dbpedia.org/resource/Jesus
+
+
+
+FB15K : 
+
+/m/04n7gc6						/people/person/children						/m/045m1_
+/m/045m1_						/people/person/parents						/m/04n7gc6
+
+
+
+DBs-FBs :
+
+------------N : 1-----------------
+<http://dbpedia.org/resource/Jesus> 			<http://www.w3.org/2002/07/owl#sameAs> 				<http://rdf.freebase.com/ns/m.045m1_> 
+<http://dbpedia.org/resource/Man_from_heaven> 		<http://www.w3.org/2002/07/owl#sameAs> 				<http://rdf.freebase.com/ns/m.045m1_> 
+<http://dbpedia.org/resource/Lord_of_Love> 		<http://www.w3.org/2002/07/owl#sameAs> 				<http://rdf.freebase.com/ns/m.045m1_>
+<http://dbpedia.org/resource/High_priest> 		<http://www.w3.org/2002/07/owl#sameAs> 				<http://rdf.freebase.com/ns/m.045m1_> .
+------------1 : N-----------------
+<http://dbpedia.org/resource/Mary_(mother_of_Jesus)> 	<http://www.w3.org/2002/07/owl#sameAs> 				<http://rdf.freebase.com/ns/m.04n7gc6> .
+<http://dbpedia.org/resource/Mary_(mother_of_Jesus)> 	<http://www.w3.org/2002/07/owl#sameAs> 				<http://rdf.freebase.com/ns/m.04n7gc6> .
+<http://dbpedia.org/resource/Mary_(mother_of_Jesus)> 	<http://www.w3.org/2002/07/owl#sameAs> 				<http://rdf.freebase.com/ns/m.011l8wzz> .
